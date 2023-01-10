@@ -334,3 +334,15 @@ span{
 .btn-limpar{
     background-color:  rgb(212, 30, 30);
 }
+
+#btn_aumentar{
+    background-color: rgba(117, 212, 117, 1);
+    cursor: pointer;
+    padding: 6px;
+    margin-left: 30%;
+}
+#btn_diminuir{
+    background-color:  rgb(212, 30, 30);
+    cursor: pointer;
+    padding: 6px;
+}
