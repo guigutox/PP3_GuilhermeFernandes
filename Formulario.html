@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles/styleP.css">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo" src="imagens/pandaIcon.svg" alt="logo">
+
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Atividades.html">Atividades</a></li>
+                <li><a href="Localizacao.html">Localização</a></li>
+
+            </ul>
+        </nav>
+        <a class="cta" href="Formulario.html"><button class="btn-form">Formulario</button></a>
+    </header>
+
+    <h1>
+        PANDA ORG
+    </h1>
+    <h1>Formulario para doação</h1>
+
+<section id="section-form">
+    <form   id="formulario" >
+        <div>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome">
+            <span id="spanNome"></span><br>
+            <label for="sobrenome">Sobrenome:</label><br>
+            <input type="text" id="sobrenome" name="sobrenome">
+            <span id="spanSobre"></span>
+        </div>
+        <div>
+            <label for="email">E-mail: </label><br>
+            <input type="email" id="email">
+            <span id="spanEmail"></span>
+        </div>
+        <div>
+            <br><label for="doacao">Valor de doação: </label><br>
+            <input type="radio" name="doacao" id="um" value = "1">R$1<br>
+            <input type="radio" name="doacao" id="cinco" value = "5">R$5 <br>
+            <input type="radio" name="doacao" id="dez" value = "10">R$10 <br>
+            <input type="radio" name="doacao" id="vinte" value = "20">R$20 <br> <br>
+            <span id="spanDoacao"></span>
+        </div>
+
+        <div>
+            <br>
+           <input type="checkbox" name="termos" id="termo"> <label for="">Concorda em receber emails de atualizações(OPCIONAL)</label>
+        </div>
+
+        <div>
+           <br> 
+           <button id="limpar" class="btn btn-limpar" type="button">Limpar</button> 
+           <button id="submeter" class="btn btn-envia" type="submit" value="Enviar" >Enviar</button>
+           <button id="btn-verifica" class="btn btn-verifica"  type="button">Verificar</button>
+           <button id="btn-editar" class="btn btn-editar" type="button">Editar</button>
+        </div>
+        
+        
+        <br><span id="spanResultado"></span>
+
+    </form>
+    
+
+    <script src="JavaScript/ScriptFormulario.js"></script>
+
+</section>
+
+    <footer class="rodape">
+        
+
+        <p style="color:whitesmoke; ">
+            Todos os direitos reservados a organização e Guilherme Augusto Fernandes <br> Telefone: (xx)xxxxxxxxx
+        </p>
+        <img class="logo" src="imagens/pandaIcon.svg" alt="logo" width="3%" style="margin-left: 50px;">
+
+
+   </footer>
+
+
+
+</body>
+
+</html>
