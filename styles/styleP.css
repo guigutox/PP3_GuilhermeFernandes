@@ -1,16 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
+:root{
+    --baseColor: rgba(117, 212, 117, 1);
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     background-color: #24252a;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #24252a;
-}
+
 
 
 li,a,button {
@@ -49,7 +48,7 @@ header {
 
 .btn-form{
     padding: 9px 25px;
-    background-color: rgba(117, 212, 117, 1);
+    background-color: var(--baseColor);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -337,7 +336,6 @@ span{
 .btn{
 
     border-radius: 5px 4px; width: 100px;
-    height: 30px;
     color: #24252a;
     cursor: pointer;
 }
@@ -373,3 +371,4 @@ span{
     cursor: pointer;
     padding: 6px;
 }
+

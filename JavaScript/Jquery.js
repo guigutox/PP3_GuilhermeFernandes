@@ -1,3 +1,9 @@
+
+
+$( document ).ready(function() {
+    $('#superTexto').toggle();
+});
+
 $('#btn_aumentar').click(
 
     function(){
@@ -11,4 +17,13 @@ $('#btn_diminuir').click(
     function(){
         $('#pandaIMG').animate({width:"400px"})
     }
+)
+
+$('#botao').click(
+
+    function(){
+        $('#superTexto').toggle();
+    }
+
+
 )

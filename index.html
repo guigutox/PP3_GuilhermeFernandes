@@ -9,7 +9,17 @@
     <link rel="stylesheet" href="styles/styleP.css">
     <link rel="shorcut icon" href="imagens/pandafav.ico">
     <title>PANDA ORG</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styleP.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
+
 
 </head>
 
@@ -32,47 +42,52 @@
         <a class="cta" href="Formulario.html"><button class="btn-form">Formulario</button></a>
     </header>
 
-
-
-    <h1>
-        PANDA ORG
-    </h1>
-    <h1>
-        Os pandas precisam de ajuda!
-    </h1>
-
-
-
-    <p class="texto">
-        Os pandas precisam da sua ajuda,tendo isso em mente criamos esta organização sem fins lucrativo para ajudar
-        nosso queridos ursos panda apesar de os pandas terem se
-        tornado um simbolo global de sucesso na conservação eles continuam em perigo de extinsão, em 2016
-        a União Internacional para a Conservação da Natureza já havia alterado a classificação do panda-gigante de
-        ameaçado para vulnerável. Porém, mesmo com essa teórica
-        melhora os cientistas locais refutaram tal avaliação, afirmando que era uma decisão que poderia prejudicar
-        organizações de proteção aos pandas, assim como a nossa.
-        Mesmo com sua alteração da classificação, ainda é de suma importância manter os cuidados em relação aos pandas.
-        Como apresentado numa pesquisa do <a
-            href="https://www.nationalgeographicbrasil.com/animais/2021/09/pandas-foram-retirados-da-lista-de-especies-ameacadas-na-china-mas-riscos-persistem">National
-            Geographic Brasil</a> o
-        desmatamento generalizado e a fragmentação do habitat restringem os pandas na natureza a menos de 1% de sua área
-        de distribuição histórica, além das novas ameaças que surgiram.
-        De acordo com a UICN, prev-se que mais de 35% das florestas de bambu, nas quais habitam os pandas gigantes,
-        desapareçam nos proximos 80 anos devido às alterações climáticas.
-        Dito isto sejam bem vindos ao nosso site onde você pode entender o projeto e contribuir para a causa.
-    </p>
+    <div class="jumbotron" style="background-color: #53555c;">
+        <h1 class="display-4">PANDA ORG</h1>
+        <p class="lead" style="color: rgb(199, 197, 197);" >Os pandas precisam da sua ajuda, continue no site para descobrir em como pode ajudar!</p>
+        <hr class="my-4">
+        <p style="color: aliceblue;">Obrigado por visitar nosso site, clique no botão para saber mais sobre nós.</p>
+        <p class="lead">
+          <a id="botao" class="btn btn-primary btn-lg" href="javascript:void(0)" role="button" style="color: aliceblue; background-color: rgba(117, 212, 117, 1);" >Saiba mais</a>
+        </p>
+      </div>
+      <div id="superTexto">
+        <p class="texto">
+            Os pandas precisam da sua ajuda,tendo isso em mente criamos esta organização sem fins lucrativo para ajudar
+            nosso queridos ursos panda apesar de os pandas terem se
+            tornado um simbolo global de sucesso na conservação eles continuam em perigo de extinsão, em 2016
+            a União Internacional para a Conservação da Natureza já havia alterado a classificação do panda-gigante de
+            ameaçado para vulnerável. Porém, mesmo com essa teórica
+            melhora os cientistas locais refutaram tal avaliação, afirmando que era uma decisão que poderia prejudicar
+            organizações de proteção aos pandas, assim como a nossa.
+            Mesmo com sua alteração da classificação, ainda é de suma importância manter os cuidados em relação aos pandas.
+            Como apresentado numa pesquisa do <a
+                href="https://www.nationalgeographicbrasil.com/animais/2021/09/pandas-foram-retirados-da-lista-de-especies-ameacadas-na-china-mas-riscos-persistem">National
+                Geographic Brasil</a> o
+            desmatamento generalizado e a fragmentação do habitat restringem os pandas na natureza a menos de 1% de sua área
+            de distribuição histórica, além das novas ameaças que surgiram.
+            De acordo com a UICN, prev-se que mais de 35% das florestas de bambu, nas quais habitam os pandas gigantes,
+            desapareçam nos proximos 80 anos devido às alterações climáticas.
+            Dito isto sejam bem vindos ao nosso site onde você pode entender o projeto e contribuir para a causa.
+        </p>
+      </div>
+    
 
 
     <div class="flex-container">
         <div class="flex-item">
             <img src="imagens/panda.webp" alt="" id="pandaIMG"><br>
-            <button id="btn_aumentar">Aumentar</button>
-            <button id="btn_diminuir">Diminuir</button>
+            <button id="btn_aumentar" style="font-size: 15px;"> Aumentar  <span class="bi-plus-lg" style="color: black;"></span> </button>
+            <button id="btn_diminuir" style="font-size: 15px;">Diminuir  <span class="bi-dash-lg" style="color: black;"></span></button>
+
+
+            
+           
 
         </div>
     </div>
  
-
+    
 
     <footer class="rodape">
 
