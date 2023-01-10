@@ -11,12 +11,15 @@ btnLimpar.disabled = false;
 const btnValidar = document.getElementById("btn-verifica");
 btnValidar.disabled = false;
 
+const btnModal = document.getElementById("btn-modal");
+btnModal.disabled = true;
 
 btnLimpar.addEventListener('click',limpar);
 btnEditar.addEventListener('click', religar);
 btnValidar.addEventListener('click', validarForm)
 
 const validou = false;
+
 
 function validarForm(){
 
@@ -30,6 +33,7 @@ function validarForm(){
     
     btnSubmeter.disabled = true;
     btnEditar.disabled = true;
+    btnModal.disabled = true;
 
     const spanNome = document.getElementById("spanNome");
     const spanSobrenome = document.getElementById("spanSobre");
@@ -96,9 +100,10 @@ function validarForm(){
 
         btnEditar.disabled = false;
         btnSubmeter.disabled = false;
+        btnModal.disabled = false;
 
         resultado.innerHTML = `
-        <table id="tabela"  border = 1>
+        <table  id="tabela"  border = 1> 
             <thead>
                 <th> NOME </th>
                 <th> SOBRENOME </th>
@@ -139,6 +144,7 @@ function religar(){
     btnEditar.disabled = true;
     btnSubmeter.disabled = true;
     btnLimpar.disabled = false;
+    btnModal.disabled = true;
     //Desabilita os botoes
 
 }

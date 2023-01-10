@@ -2,6 +2,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    background-color: #24252a;
 }
 
 * {
@@ -127,6 +128,7 @@ h1 {
 
 .tabela-preco {
     border: black;
+    margin-left: 30%;
 
 }
 
@@ -290,8 +292,33 @@ tr>td {
         font-size: 0.9rem;
     }
 
+ 
+
 }
 
+@media (max-width: 900px){
+    .tabela-preco {
+        border: black;
+        margin-left: 15%;
+    
+    }
+}
+
+@media (max-width: 1000px){
+    .tabela-preco {
+        border: black;
+        margin-left: 17%;
+    
+    }
+}
+
+@media (max-width: 600px){
+    .tabela-preco {
+        border: black;
+        margin-left: 6%;
+    
+    }
+}
 
 
 #tabela{
