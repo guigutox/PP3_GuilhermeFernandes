@@ -2,6 +2,7 @@
 
 $( document ).ready(function() {
     $('#superTexto').toggle();
+    
 });
 
 $('#btn_aumentar').click(
@@ -23,7 +24,7 @@ $('#botao').click(
 
     function(){
         $('#superTexto').toggle();
+        $('#badge_new').fadeTo("slow", 0);
     }
-
-
+    
 )

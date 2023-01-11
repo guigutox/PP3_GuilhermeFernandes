@@ -103,7 +103,7 @@ function validarForm(){
         btnModal.disabled = false;
 
         resultado.innerHTML = `
-        <table  id="tabela"  border = 1> 
+        <table  id="tabela"  border = 1 style="background-color: aliceblue; color: black; "> 
             <thead>
                 <th> NOME </th>
                 <th> SOBRENOME </th>

@@ -131,7 +131,7 @@ h1 {
 
 }
 
-tr>td {
+.atv_tr > .td-tt {
 
     color: whitesmoke;
     padding-left: 10px;
@@ -319,11 +319,29 @@ tr>td {
     }
 }
 
+@media (max-width: 550px){
+    .tabela-preco {
+        border: black;
+        margin-left: 1%;
+    }
+    .subtexto{
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
 
 #tabela{
   border-color: rgba(117, 212, 117, 1);
-  color: whitesmoke;
+  color: black;
   font-size: 0.9rem;
+}
+
+#tabela > td{
+    color: black;
 }
 
 
