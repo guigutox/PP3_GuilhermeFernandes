@@ -19,12 +19,14 @@ btnEditar.addEventListener('click', religar);
 btnValidar.addEventListener('click', validarForm)
 
 const validou = false;
+var contador = 0;
 
 
 function validarForm(){
 
  
     var formValido = true;
+   
     event.preventDefault();
     //Impede que a pagina de reload
 
@@ -83,9 +85,14 @@ function validarForm(){
         formValido = false;
     }
 
+
     erros.forEach((erro)=>{
         erro.span.textContent = erro.menssagem;
     })
+
+
+
+ 
 
     const resultado = document.getElementById("spanResultado");
 
@@ -121,6 +128,10 @@ function validarForm(){
         </table>
     `
         btnLimpar.disabled = true;
+    }else{
+        contador++;
+        document.querySelector('#badge_new').textContent = "Submissões erradas: "+ contador;
+        console.log(contador);
     }
  
 }
